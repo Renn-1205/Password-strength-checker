@@ -18,12 +18,12 @@ const reqNoSeq = document.getElementById('req-no-seq');
 const reqNoRepeat = document.getElementById('req-no-repeat');
 const reqNoCommon = document.getElementById('req-no-common');
 
-```// API Configuration
+// API Configuration
 // For local development: 'http://localhost:3000'
 // For production: Replace with your deployed backend URL (e.g., 'https://your-backend.onrender.com')
 const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? 'http://localhost:3000'
-  : 'YOUR_BACKEND_URL_HERE';```
+  : 'https://password-strength-checker-8.onrender.com';
 
 // Debounce function to limit API calls
 function debounce(func, wait) {
