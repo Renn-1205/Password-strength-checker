@@ -3,7 +3,12 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
-app.use(cors());
+// CORS configuration - Allow requests from any origin (update for production if needed)
+app.use(cors({
+  origin: '*', // In production, you can restrict this to your frontend URL
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
+}));
 app.use(express.json());
 
 // Serve static files from the frontend directory
